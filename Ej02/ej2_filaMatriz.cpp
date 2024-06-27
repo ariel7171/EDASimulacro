@@ -61,9 +61,9 @@ struct TDApeaje{
 	void mostrarFila(int via){
 	  cout << "\n En la vía " << via << ":\n";
         for (int i = 0; i < cant[via]; i++) {
-            int idx = (p[via] + i) % MAX;
-            cout << "Modelo: " << fila[via][idx].modelo
-                 << ", Patente: " << fila[via][idx].patente << endl;
+            int indiceActual= (p[via] + i) % MAX;
+            cout << "Modelo: " << fila[via][indiceActual].modelo
+                 << ", Patente: " << fila[via][indiceActual].patente << endl;
 			
 		}
 	}
