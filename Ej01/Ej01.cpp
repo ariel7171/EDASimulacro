@@ -14,9 +14,8 @@ Hacer un menu de opciones, usando do-while y switch para:
 2. Cargar Hormiga a sendero A
 3. Derivar a sendero B o C
 4. Quitar hoja, Regresar de sendero B a A
-5. Mostrar y Vaciar sendero C
+5. Mostrar y Vaciar sendero C.
 */
-
 
 #include <iostream>
 using namespace std;
@@ -121,7 +120,7 @@ void cargarHormigas(Fila &fila){
 
 void vaciarSendero(Fila &sendero){
 	//cout<<sendero<<endl;
-	//Hormiga hormiga = 
+
 	while(!sendero.filaVacia()){
 		
 		cout<<"Tipo: "<<sendero.verPrimero().tipo<<", Tiene hoja: " << (sendero.verPrimero().recolecto == 1 ? "Si" : "No")	<<endl;		
@@ -210,8 +209,3 @@ int main(){
 
 	return 0;	
 }
-
-
-
-
-
